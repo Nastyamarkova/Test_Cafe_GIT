@@ -1,0 +1,23 @@
+{
+  "name": "test_cafe_git",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test:chrome": "testcafe chrome ./tests",
+    "test:chrome:5": "testcafe -c 5 chrome ./tests -s takeOnFails=true",
+    "test:chrome:headless": "testcafe chrome:headless ./tests",
+    "test:safari": "testcafe safari ./tests",
+    "test:firefox": "testcafe firefox ./tests",
+    "start-jenkins-server": "java -jar jenkins.war --httpPort=8080 --enable-future-java"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^3.0.2",
+    "testcafe": "^3.2.0"
+  }
+}
